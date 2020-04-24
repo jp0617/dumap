@@ -23,7 +23,7 @@ export class MenuComponent implements OnInit {
       background: '#fff',
       backdrop: `
         rgba(0,0,123,0.4)
-        url("../../../assets/200_d.gif")
+        url("../../../assets/gif/unnamed.gif")
         left top
         no-repeat
       `
