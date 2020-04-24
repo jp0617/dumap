@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { maxHeaderSize } from 'http';
 
 @Component({
   selector: 'app-menu',
@@ -15,12 +16,12 @@ export class MenuComponent implements OnInit {
 
 
 
-  prueba=()=>{
+  papers=()=>{
     Swal.fire({
-      title: 'Bienvenido.',
+      title: 'Papeles.',
       width: 600,
       padding: '3em',
-      background: '#fff',
+      background: 'url("../../../assets/gif/verde.jpg")',
       backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/unnamed.gif")
