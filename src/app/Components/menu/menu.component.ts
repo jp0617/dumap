@@ -17,9 +17,16 @@ export class MenuComponent implements OnInit {
 
   prueba=()=>{
     Swal.fire({
-    icon: "info",
-    showCancelButton: false,
-    text:"Bienvenido" 
+      title: 'Bienvenido.',
+      width: 600,
+      padding: '3em',
+      background: '#fff',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("../../../assets/200_d.gif")
+        left top
+        no-repeat
+      `
     })
 
   }
