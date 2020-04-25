@@ -16,15 +16,15 @@ export class MenuComponent implements OnInit {
 
 
 
-  papers=()=>{
+  glass=()=>{
     Swal.fire({
-      title: 'Papeles.',
+      title: 'Vidrios.',
       width: 600,
       padding: '3em',
-      background: 'url("../../../assets/gif/verde.jpg")',
+      background: 'url("../../../assets/img/green.jpg")',
       backdrop: `
         rgba(0,0,123,0.4)
-        url("../../../assets/gif/unnamed.gif")
+        url("../../../assets/gif/recycle.gif")
         left top
         no-repeat
       `
