@@ -20,7 +20,54 @@ export class MenuComponent implements OnInit {
       title: 'Vidrios.',
       width: 600,
       padding: '3em',
-      background: 'url("../../../assets/img/green.jpg")',
+      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("../../../assets/gif/5 (2).gif")
+        left top      
+        no-repeat   `
+    })
+    
+
+  }
+  carton=()=>{
+    Swal.fire({
+      title: 'Carton.',
+      width: 600,
+      padding: '3em',
+      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("../../../assets/gif/planet.gif")
+        left top
+        no-repeat
+      `
+    })
+    
+
+  }
+  organic=()=>{
+    Swal.fire({
+      title: 'Orgánicos.',
+      width: 600,
+      padding: '3em',
+      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("../../../assets/gif/plant.gif")
+        left top
+        no-repeat
+      `
+    })
+    
+
+  }
+  white=()=>{
+    Swal.fire({
+      title: 'Vidrios.',
+      width: 600,
+      padding: '3em',
+      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
       backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/recycle.gif")
@@ -28,7 +75,55 @@ export class MenuComponent implements OnInit {
         no-repeat
       `
     })
+    
 
   }
+  yellow=()=>{
+    Swal.fire({
+      title: 'Vidrios.',
+      width: 600,
+      padding: '3em',
+      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("../../../assets/gif/recycle.gif")
+        left top
+        no-repeat
+      `
+    })
+    
+
+  }
+  black=()=>{
+    Swal.fire({
+      title: 'Vidrios.',
+      width: 600,
+      padding: '3em',
+      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("../../../assets/gif/recycle.gif")
+        left top
+        no-repeat
+      `
+    })
+    
+
+  }
+  info=()=>{
+    Swal.fire({
+      title: '',
+      imageUrl:'url("")',
+      imageHeight: 250,
+      padding: '3em',
+      background:'url("")',
+      backdrop: `
+        url("../../../assets/gif/proceso.gif")
+        center
+        no-repeat
+      `
+
+  })
+}
 
 }
