@@ -168,13 +168,15 @@ export class MenuComponent implements OnInit {
         imageUrl:'url("")',
         imageHeight: 250,
         padding: '3em',
+        timer:4000,
+        showConfirmButton:false,
+        timerProgressBar:true,
         background:'url("")',
         backdrop: `
         url("../../../assets/gif/intro.gif")
         center
         no-repeat
         `
-
       })
     }
   }
