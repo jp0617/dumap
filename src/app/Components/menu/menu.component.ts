@@ -7,14 +7,16 @@ import Swal from 'sweetalert2';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  
-  constructor() { }
-  
+
+  constructor() {
+    this.info();
+  }
+
   ngOnInit(): void {
   }
-  
-  
-  
+
+
+
   glass=()=>{
     Swal.fire({
       title: '¿DESEA SABER QUÉ SE RECICLA EN ESTA SECCIÓN?',
@@ -29,9 +31,9 @@ export class MenuComponent implements OnInit {
       backdrop: `
       rgba(0,0,123,0.4)
       url("../../../assets/gif/5 (2).gif")
-      left top      
+      left top
       no-repeat   `
-      
+
     }).then((result) =>{
       if(result.value){
         Swal.fire({
@@ -44,7 +46,7 @@ export class MenuComponent implements OnInit {
           backdrop: `
           rgba(0,0,123,0.4)
           url("../../../assets/gif/3.gif")
-          left top      
+          left top
           no-repeat   `
         }).then((result2) => {
           if(result2.value){
@@ -56,7 +58,7 @@ export class MenuComponent implements OnInit {
             backdrop: `
             rgba(0,0,123,0.4)
             url("../../../assets/gif/4.gif")
-            left top      
+            left top
             no-repeat   `
             })
           }
@@ -64,7 +66,7 @@ export class MenuComponent implements OnInit {
       }
     })
 }
-    
+
     carton=()=>{
       Swal.fire({
         title: 'Carton.',
@@ -78,8 +80,8 @@ export class MenuComponent implements OnInit {
         no-repeat
         `
       })
-      
-      
+
+
     }
     organic=()=>{
       Swal.fire({
@@ -94,8 +96,8 @@ export class MenuComponent implements OnInit {
         no-repeat
         `
       })
-      
-      
+
+
     }
     white=()=>{
       Swal.fire({
@@ -110,8 +112,8 @@ export class MenuComponent implements OnInit {
         no-repeat
         `
       })
-      
-      
+
+
     }
     yellow=()=>{
       Swal.fire({
@@ -126,8 +128,8 @@ export class MenuComponent implements OnInit {
         no-repeat
         `
       })
-      
-      
+
+
     }
     black=()=>{
       Swal.fire({
@@ -142,8 +144,8 @@ export class MenuComponent implements OnInit {
         no-repeat
         `
       })
-      
-      
+
+
     }
     info=()=>{
       Swal.fire({
@@ -157,9 +159,8 @@ export class MenuComponent implements OnInit {
         center
         no-repeat
         `
-        
+
       })
     }
-    
+
   }
-  
