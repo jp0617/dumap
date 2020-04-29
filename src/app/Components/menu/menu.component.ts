@@ -7,138 +7,145 @@ import Swal from 'sweetalert2';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
+  
   constructor() { }
-
+  
   ngOnInit(): void {
   }
-
-
-
+  
+  
+  
   glass=()=>{
     Swal.fire({
-      title: 'Vidrios.',
+      title: '¿DESEA SABER QUÉ SE RECICLA EN ESTA SECCIÓN?',
       width: 600,
-      confirmButtonText:'Terminado.',
+      confirmButtonText:'¡Sí, vamos a reciclar!',
+      showCancelButton:true,
+      cancelButtonText:'No, retroceder',
+      cancelButtonColor:'#d33',
+      confirmButtonColor:'green',
       padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+      background: 'url("../../../assets/img/azulpalido.png")',
       backdrop: `
-        rgba(0,0,123,0.4)
-        url("../../../assets/gif/5 (2).gif")
-        left top      
-        no-repeat   `
+      rgba(0,0,123,0.4)
+      url("../../../assets/gif/5 (2).gif")
+      left top      
+      no-repeat   `
       
-    }).then((result) => {
+    }).then((result) =>{
       if(result.value){
         Swal.fire({
-        title: 'GRACIAS POR TOMARTE TU TIEMPO Y CONTRIBUIR A ESTA CAUSA.',
-        icon: 'success',
-        timer:5000,
-        timerProgressBar:true,
-        backdrop: `
-        rgba(0,0,123,0.4)
-        url("../../../assets/gif/4.gif")
-        left top      
-        no-repeat   `
+          title: 'AQUÍ VA LO QUE SE RECICLA',
+          confirmButtonText:'¡He terminado!',
+          showCancelButton:true,
+          cancelButtonText:'No quiero continuar',
+          cancelButtonColor:'#d33',
+          confirmButtonColor:'green',
+          backdrop: `
+          rgba(0,0,123,0.4)
+          url("../../../assets/gif/3.gif")
+          left top      
+          no-repeat   `
         })
       }
     })
+}
     
-  }
-  carton=()=>{
-    Swal.fire({
-      title: 'Carton.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
+    carton=()=>{
+      Swal.fire({
+        title: 'Carton.',
+        width: 600,
+        padding: '3em',
+        background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+        backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/planet.gif")
         left top
         no-repeat
-      `
-    })
-    
-
-  }
-  organic=()=>{
-    Swal.fire({
-      title: 'Orgánicos.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
+        `
+      })
+      
+      
+    }
+    organic=()=>{
+      Swal.fire({
+        title: 'Orgánicos.',
+        width: 600,
+        padding: '3em',
+        background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+        backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/plant.gif")
         left top
         no-repeat
-      `
-    })
-    
-
-  }
-  white=()=>{
-    Swal.fire({
-      title: 'Vidrios.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
+        `
+      })
+      
+      
+    }
+    white=()=>{
+      Swal.fire({
+        title: 'Vidrios.',
+        width: 600,
+        padding: '3em',
+        background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+        backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/recycle.gif")
         left top
         no-repeat
-      `
-    })
-    
-
-  }
-  yellow=()=>{
-    Swal.fire({
-      title: 'Vidrios.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
+        `
+      })
+      
+      
+    }
+    yellow=()=>{
+      Swal.fire({
+        title: 'Vidrios.',
+        width: 600,
+        padding: '3em',
+        background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+        backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/recycle.gif")
         left top
         no-repeat
-      `
-    })
-    
-
-  }
-  black=()=>{
-    Swal.fire({
-      title: 'Vidrios.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
+        `
+      })
+      
+      
+    }
+    black=()=>{
+      Swal.fire({
+        title: 'Vidrios.',
+        width: 600,
+        padding: '3em',
+        background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+        backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/recycle.gif")
         left top
         no-repeat
-      `
-    })
-    
-
-  }
-  info=()=>{
-    Swal.fire({
-      title: '',
-      imageUrl:'url("")',
-      imageHeight: 250,
-      padding: '3em',
-      background:'url("")',
-      backdrop: `
+        `
+      })
+      
+      
+    }
+    info=()=>{
+      Swal.fire({
+        title: '',
+        imageUrl:'url("")',
+        imageHeight: 250,
+        padding: '3em',
+        background:'url("")',
+        backdrop: `
         url("../../../assets/gif/proceso.gif")
         center
         no-repeat
-      `
-
-  })
-}
-
-}
+        `
+        
+      })
+    }
+    
+  }
+  
