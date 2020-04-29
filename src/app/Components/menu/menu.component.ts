@@ -19,6 +19,7 @@ export class MenuComponent implements OnInit {
     Swal.fire({
       title: 'Vidrios.',
       width: 600,
+      confirmButtonText:'Terminado.',
       padding: '3em',
       background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
       backdrop: `
@@ -26,6 +27,20 @@ export class MenuComponent implements OnInit {
         url("../../../assets/gif/5 (2).gif")
         left top      
         no-repeat   `
+      
+    }).then((result) => {
+      if(result.value){
+        Swal.fire({
+        title: 'GRACIAS POR TOMARTE TU TIEMPO Y CONTRIBUIR A ESTA CAUSA.',
+        icon: 'success',
+        timer:5000,
+        backdrop: `
+        rgba(0,0,123,0.4)
+        url("../../../assets/gif/4.gif")
+        left top      
+        no-repeat   `
+        })
+      }
     })
     
 
