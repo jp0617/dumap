@@ -46,6 +46,20 @@ export class MenuComponent implements OnInit {
           url("../../../assets/gif/3.gif")
           left top      
           no-repeat   `
+        }).then((result2) => {
+          if(result2.value){
+            Swal.fire({
+            title: 'GRACIAS POR TOMARTE TU TIEMPO Y CONTRIBUIR A ESTA CAUSA.',
+            icon: 'success',
+            timer:5000,
+            timerProgressBar:true,
+            backdrop: `
+            rgba(0,0,123,0.4)
+            url("../../../assets/gif/4.gif")
+            left top      
+            no-repeat   `
+            })
+          }
         })
       }
     })
