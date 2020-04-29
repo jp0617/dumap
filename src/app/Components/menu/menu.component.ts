@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 export class MenuComponent implements OnInit {
 
   constructor() {
-    this.info();
+    this.intro();
   }
 
   ngOnInit(): void {
@@ -162,5 +162,19 @@ export class MenuComponent implements OnInit {
 
       })
     }
+    intro=()=>{
+      Swal.fire({
+        title: '',
+        imageUrl:'url("")',
+        imageHeight: 250,
+        padding: '3em',
+        background:'url("")',
+        backdrop: `
+        url("../../../assets/gif/intro.gif")
+        center
+        no-repeat
+        `
 
+      })
+    }
   }
