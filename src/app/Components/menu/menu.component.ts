@@ -34,6 +34,7 @@ export class MenuComponent implements OnInit {
         title: 'GRACIAS POR TOMARTE TU TIEMPO Y CONTRIBUIR A ESTA CAUSA.',
         icon: 'success',
         timer:5000,
+        timerProgressBar:true,
         backdrop: `
         rgba(0,0,123,0.4)
         url("../../../assets/gif/4.gif")
@@ -43,7 +44,6 @@ export class MenuComponent implements OnInit {
       }
     })
     
-
   }
   carton=()=>{
     Swal.fire({
