@@ -5,29 +5,36 @@ h1{
     color: black;
 }
 
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 23px;
+}
+
 .col {
-    
+
     text-align: center;
     justify-content: center;
 }
 
 .btnGlass{
-    background-color:green;
-    font-family: 'Roboto Mono', monospace;
-    font-size: xx-large;
-    border-style: none;
-    color: white;
-    height:200px ;
-    width:200px ;
+  border-color:blue;
+  font-family: 'Roboto Mono', monospace;
+  font-size: xx-large;
+  border-style: none;
+  color: white;
+  height:200px ;
+  width:200px ;
+  background-image:url('../../../assets/img/caneca-azul.png') ;
 }
 .btnPapers{
-    border-color:blue;
-    font-family: 'Roboto Mono', monospace;
-    font-size: xx-large;
-    border-style: none;
-    color: white;
-    height:200px ;
-    width:200px ;
+  background-color:brown;
+  font-family: 'Roboto Mono', monospace;
+  font-size: xx-large;
+  border-style: none;
+  color: white;
+  height:200px ;
+  width:200px ;
+  background-image:url('../../../assets/img/caneca-cafe.png') ;
 }
 .btnGeneral{
     background-color:gray;
@@ -38,5 +45,4 @@ h1{
     height:200px ;
     width:200px ;
 }
-
 

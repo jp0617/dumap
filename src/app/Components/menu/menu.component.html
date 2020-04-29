@@ -1,12 +1,14 @@
 <h1>Dale un minuto al planeta</h1>
 <div class="container">
     <div class="row">
+      <div class="col">
+        <p>Vidrios</p>
+          <button id="imag" type="submit" class="btnGlass btn-primary btn-lg" (click)="glass()"><img id="imagen"/></button></div>
+      <br>
         <div class="col ">
-            <button type="button" class="btnGlass btn-primary btn-lg"(click)="glass()"><span class="icon-recycle">Vidrio</span></button>
+          <p>Papeles</p>
+            <button type="button" class="btnPapers btn-primary btn-lg"(click)="glass()"><span class="icon-recycle"></span></button>
         </div>
-        <br>
-        <div class="col">
-            <button id="imag" type="submit" class="btnPapers btn-primary btn-lg" (click)="glass()"><img id="imagen" src="../../../assets/img/green.jpg" height="70px" width="30px" />Papeles</button>        </div>
         <br>
         <div class="col">
             <button class="btnGeneral btn-primary btn-lg">Desechos en general</button>
