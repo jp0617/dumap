@@ -7,14 +7,32 @@
     font-family: 'Bangers', cursive;
     font-size: xx-large;
     text-align: center;
+    color:black;
+
 
 }
-
+.padre {
+    display: flex;
+    align-items: center;
+ }
+  footer {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    text-align: center;
+    color: white;
+  }
+.buttonPosition{
+    text-align:center bottom;
+}
 .colored{
     background: Yellowgreen;
     position: fixed;
+    color: black;
     padding: 20px 0 !important;
-    background-color: #199fd4;
+    background-image:url('../../../assets/img/backgroundLabels4.jpg');
+    // background-color: #199fd4;
 }
 
 .imgFonts{
@@ -31,8 +49,11 @@
 .btnInfo{
     font-family:'Roboto Mono', monospace;
     border-style: initial;
+    color:black;
+    background-image:url('../../../assets/img/backgroundLabels2.jpg') ;
+
 }
-.btnGlass{
+.btnGreen{
   background-color:LightGray;
   font-family: 'Roboto Mono', monospace;
   font-size: xx-large;
@@ -40,28 +61,9 @@
   color: white;
   height:200px ;
   width:200px ;
-  background-image:url('../../../assets/img/caneca-azul.png') ;
+  background-image:url('../../../assets/img/caneca-verdeb.png') ;
 }
-.btnPapers{
-  background-color: LightGray;
-  font-family: 'Roboto Mono', monospace;
-  font-size: xx-large;
-  border-style: none;
-  color: white;
-  height:200px ;
-  width:200px ;
-  background-image:url('../../../assets/img/caneca-cafe.png') ;
-}
-.btnOrganic{
-    background-color: LightGray;
-    font-family: 'Roboto Mono', monospace;
-    font-size: xx-large;
-    border-style: none;
-    color: white;
-    height:200px ;
-    width:200px ;
-    background-image:url('../../../assets/img/caneca-naranja.png');
-}
+
 .btnWhite{
     background-color: LightGray;
     font-family: 'Roboto Mono', monospace;
@@ -70,7 +72,7 @@
     color: white;
     height:200px ;
     width:200px ;
-    background-image:url('../../../assets/img/caneca-blanca.png');
+    background-image:url('../../../assets/img/caneca-blancab.png');
 }
 .btnBlack{
     background-color: LightGray;
@@ -80,16 +82,7 @@
     color: white;
     height:200px ;
     width:200px ;
-    background-image:url('../../../assets/img/caneca-negra.png');
+    background-image:url('../../../assets/img/caneca-negrab.png');
 }
-.btnYellow{
-    background-color: LightGray;
-    font-family: 'Roboto Mono', monospace;
-    font-size: xx-large;
-    border-style: none;
-    color: white;
-    height:200px ;
-    width:200px ;
-    background-image:url('../../../assets/img/caneca-amarilla2.png');
-}
+
 

@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
   
   
   
-  glass=()=>{
+  aprovechables=()=>{
     Swal.fire({
       title: '¿DESEA SABER QUÉ SE RECICLA EN ESTA SECCIÓN?',
       width: 600,
@@ -46,7 +46,7 @@ export class MenuComponent implements OnInit {
           backdrop: `
           rgba(0,0,123,0.4)
           url("../../../assets/gif/3.gif")
-          left top
+          right top
           no-repeat   `
         }).then((result2) => {
           if(result2.value){
@@ -67,7 +67,7 @@ export class MenuComponent implements OnInit {
     })
   }
   
-  carton=()=>{
+  noAprovechables=()=>{
     Swal.fire({
       title: '¿DESEA SABER QUÉ SE RECICLA EN ESTA SECCIÓN?',
       width: 600,
@@ -77,11 +77,11 @@ export class MenuComponent implements OnInit {
       cancelButtonColor:'#d33',
       confirmButtonColor:'green',
       padding: '3em',
-      background: 'url("../../../assets/img/cafe-palido.png")',
+      background: 'url("../../../assets/img/confirm.png")',
       backdrop: `
       rgba(0,0,123,0.4)
-      url("../../../assets/gif/planet.gif")
-      left top
+      url("../../../assets/gif/planet2.gif")
+      left 
       no-repeat   `
     }).then((result) =>{
       if(result.value){
@@ -94,8 +94,8 @@ export class MenuComponent implements OnInit {
           confirmButtonColor:'green',
           backdrop: `
           rgba(0,0,123,0.4)
-          url("../../../assets/gif/recycle.gif")
-          left top
+          url("../../../assets/gif/1.gif")
+          right top
           no-repeat   `
         }).then((result2) => {
           if(result2.value){
@@ -106,7 +106,7 @@ export class MenuComponent implements OnInit {
               timerProgressBar:true,
               backdrop: `
               rgba(0,0,123,0.4)
-              url("../../../assets/gif/4.gif")
+              url("../../../assets/gif/2.gif")
               left top
               no-repeat   `
             })
@@ -118,68 +118,56 @@ export class MenuComponent implements OnInit {
   }
   organic=()=>{
     Swal.fire({
-      title: 'Orgánicos.',
+      title: '¿DESEA SABER QUÉ SE RECICLA EN ESTA SECCIÓN?',
       width: 600,
+      confirmButtonText:'¡Sí, vamos a reciclar!',
+      showCancelButton:true,
+      cancelButtonText:'No, retroceder',
+      cancelButtonColor:'#d33',
+      confirmButtonColor:'green',
       padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
+      background: 'url("../../../assets/img/cafe-palido.png")',
       backdrop: `
       rgba(0,0,123,0.4)
-      url("../../../assets/gif/plant.gif")
-      left top
-      no-repeat
-      `
+      url("../../../assets/gif/leaf.gif")
+      left bottom
+      no-repeat   `
+    }).then((result) =>{
+      if(result.value){
+        Swal.fire({
+          title: 'AQUÍ VA LO QUE SE RECICLA',
+          confirmButtonText:'¡He terminado!',
+          showCancelButton:true,
+          cancelButtonText:'No quiero continuar',
+          cancelButtonColor:'#d33',
+          confirmButtonColor:'green',
+          backdrop: `
+          rgba(0,0,123,0.4)
+          url("../../../assets/gif/organic.gif")
+          right top
+          no-repeat   `
+        }).then((result2) => {
+          if(result2.value){
+            Swal.fire({
+              title: 'GRACIAS POR TOMARTE TU TIEMPO Y CONTRIBUIR A ESTA CAUSA.',
+              icon: 'success',
+              timer:5000,
+              timerProgressBar:true,
+              backdrop: `
+              rgba(0,0,123,0.4)
+              url("../../../assets/gif/confirmgif.gif")
+              left top
+              no-repeat   `
+            })
+          }
+        })
+        
+      }
     })
     
     
   }
-  white=()=>{
-    Swal.fire({
-      title: 'Vidrios.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
-      rgba(0,0,123,0.4)
-      url("../../../assets/gif/recycle.gif")
-      left top
-      no-repeat
-      `
-    })
-    
-    
-  }
-  yellow=()=>{
-    Swal.fire({
-      title: 'Vidrios.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
-      rgba(0,0,123,0.4)
-      url("../../../assets/gif/recycle.gif")
-      left top
-      no-repeat
-      `
-    })
-    
-    
-  }
-  black=()=>{
-    Swal.fire({
-      title: 'Vidrios.',
-      width: 600,
-      padding: '3em',
-      background: 'url("../../../assets/img/background-abstract-texture-fabric.jpg")',
-      backdrop: `
-      rgba(0,0,123,0.4)
-      url("../../../assets/gif/recycle.gif")
-      left top
-      no-repeat
-      `
-    })
-    
-    
-  }
+  
   info=()=>{
     Swal.fire({
       title: '',
