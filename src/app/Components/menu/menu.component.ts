@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
   aprovechables=()=>{
     Swal.fire({
       title: '¿DESEA SABER QUÉ SE RECICLA EN ESTA SECCIÓN?',
-      width: 600,
+      width: 600,      
       confirmButtonText:'¡Sí, vamos a reciclar!',
       showCancelButton:true,
       cancelButtonText:'No, retroceder',
@@ -37,7 +37,12 @@ export class MenuComponent implements OnInit {
     }).then((result) =>{
       if(result.value){
         Swal.fire({
-          title: 'AQUÍ VA LO QUE SE RECICLA',
+          title: 'APROVECHABLES',
+          text:'Residuos aprovechables como plástico, botellas, latas, vidrio, metales, papel y cartón.',
+          imageUrl: 'https://i.ibb.co/BPxBhth/aprovechables.png',
+          imageWidth: 400,
+          imageHeight: 300,
+          imageAlt: 'Custom image',
           confirmButtonText:'¡He terminado!',
           showCancelButton:true,
           cancelButtonText:'No quiero continuar',
@@ -86,7 +91,12 @@ export class MenuComponent implements OnInit {
     }).then((result) =>{
       if(result.value){
         Swal.fire({
-          title: 'AQUÍ VA LO QUE SE RECICLA',
+          title: 'NO APROVECHABLES',
+          text:'Residuos no aprovechables como el papel higiénico; servilletas, papeles y cartones contaminados con comida; papeles metalizados, entre otros.',
+          imageUrl: 'https://i.ibb.co/d6S1VZs/no-Aprovechables.png',
+          imageWidth: 400,
+          imageHeight: 300,
+          imageAlt: 'Custom image',
           confirmButtonText:'¡He terminado!',
           showCancelButton:true,
           cancelButtonText:'No quiero continuar',
@@ -135,7 +145,12 @@ export class MenuComponent implements OnInit {
     }).then((result) =>{
       if(result.value){
         Swal.fire({
-          title: 'AQUÍ VA LO QUE SE RECICLA',
+          title: 'ORGÁNICOS',
+          text:'Residuos orgánicos aprovechables como los restos de comida, desechos agrícolas etc.',
+          imageUrl: 'https://i.ibb.co/R62SQb7/organicos.png',
+          imageWidth: 400,
+          imageHeight: 300,
+          imageAlt: 'Custom image',
           confirmButtonText:'¡He terminado!',
           showCancelButton:true,
           cancelButtonText:'No quiero continuar',
