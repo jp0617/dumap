@@ -59,8 +59,7 @@ export class NavigationComponent implements OnInit {
       '<input id="strEmail" class="swal2-input" placeholder="Email">'+
       '<input id="strId" class="swal2-input" placeholder="Identificación">'+
       '<input id="strTelefono" class="swal2-input" placeholder="Teléfono">'+
-      '<input type="password" id="strPass" class="swal2-input" placeholder="Contraseña">'+
-      '<input type="password" id="strRePass" class="swal2-input" placeholder="Repetir contraseña">',
+      '<input type="password" id="strPass" class="swal2-input" placeholder="Contraseña">',      
       showCancelButton: true,
       confirmButtonText: 'Registrarse',
       cancelButtonColor:'#d33',

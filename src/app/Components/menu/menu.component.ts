@@ -37,12 +37,14 @@ export class MenuComponent implements OnInit {
     }).then((result) =>{
       if(result.value){
         Swal.fire({
-          title: 'APROVECHABLES',
-          text:'Residuos aprovechables como plástico, botellas, latas, vidrio, metales, papel y cartón.',
+          text:'Residuos aprovechables como plástico, botellas, latas, vidrio, metales, papel y cartón.',          
           imageUrl: 'https://i.ibb.co/BPxBhth/aprovechables.png',
           imageWidth: 400,
           imageHeight: 300,
           imageAlt: 'Custom image',
+          html:
+          '<strong>Residuos aprovechables como plástico, botellas, latas, vidrio, metales, papel y cartón.</strong>'+
+          '<input id="strPeso" class="swal2-input" placeholder="Peso (KG)">',         
           confirmButtonText:'¡He terminado!',
           showCancelButton:true,
           cancelButtonText:'No quiero continuar',
@@ -91,8 +93,9 @@ export class MenuComponent implements OnInit {
     }).then((result) =>{
       if(result.value){
         Swal.fire({
-          title: 'NO APROVECHABLES',
-          text:'Residuos no aprovechables como el papel higiénico; servilletas, papeles y cartones contaminados con comida; papeles metalizados, entre otros.',
+          html:
+          '<strong>Residuos no aprovechables como el papel higiénico; servilletas, papeles y cartones contaminados con comida; papeles metalizados, entre otros.</strong>'+
+          '<input id="strPeso" class="swal2-input" placeholder="Peso (KG)">',  
           imageUrl: 'https://i.ibb.co/d6S1VZs/no-Aprovechables.png',
           imageWidth: 400,
           imageHeight: 300,
@@ -145,8 +148,9 @@ export class MenuComponent implements OnInit {
     }).then((result) =>{
       if(result.value){
         Swal.fire({
-          title: 'ORGÁNICOS',
-          text:'Residuos orgánicos aprovechables como los restos de comida, desechos agrícolas etc.',
+          html:
+          '<strong>Residuos orgánicos aprovechables como los restos de comida, desechos agrícolas etc.</strong>'+
+          '<input id="strPeso" class="swal2-input" placeholder="Peso (KG)">',
           imageUrl: 'https://i.ibb.co/R62SQb7/organicos.png',
           imageWidth: 400,
           imageHeight: 300,
